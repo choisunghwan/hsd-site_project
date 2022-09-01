@@ -1,3 +1,187 @@
+
+.main_page .conts_more {
+    margin: 100px 0 100px 0;
+}
+.conts_more ul {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.conts_more ul li {
+    position: relative;
+    float: left;
+    width: 370px;
+    height: 266px;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+.conts_more ul li:first-child {
+    margin-left: 0;
+}
+.conts_more {
+    width: 100%;
+    margin: 100px 0 0 0;
+    overflow: hidden;
+}
+.hd_flex {
+    position: relative;
+    width: 100%;
+    text-align: right;
+    overflow: hidden;
+    z-index: 9;
+}
+
+.hd_flex .area_flex {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+}
+.hd_flex .area_flex ul li {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    float: left;
+}
+.hd_content .area_gnb {
+    position: relative;
+    text-align: right;
+    z-index: 1;
+}
+
+.hd_content {
+    width: 1170px;
+    margin: 0 auto;
+}
+.hd_content .area_gnb .gnb_menu {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hd_fixed.fix {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #373737;
+    z-index: 99;
+    height: 60px;
+}
+
+
+.hd_content .m_area_flex {
+    display: none;
+}
+
+
+.hd_flex {
+    position: relative;
+    width: 100%;
+    text-align: right;
+    overflow: hidden;
+    z-index: 9;
+}
+
+
+.hd_flex .area_flex ul {
+    overflow: hidden;
+    width: 194px;
+    float: right;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.hd_flex {
+    position: relative;
+    width: 100%;
+    text-align: right;
+    overflow: hidden;
+    z-index: 9;
+}
+
+
+.hd_flex .area_flex ul li {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    float: left;
+}
+
+.bg_w .hd_flex .area_flex ul li a {
+    color: #fff;
+}
+
+.main_cont_01 .main_cont_wrap .area_sc.first {
+    margin-right: 30px;
+}
+
+.main_cont_01 .main_cont_wrap .area_sc {
+    width: 570px;
+    height: 524px;
+    box-sizing: border-box;
+}
+
+#footer {
+    position: relative;
+    width: 100%;
+    background-color: #f2c000;
+    height: 310px;
+    box-sizing: border-box;
+}
+footer {
+    display: block;
+}
+
+#wrap {
+    overflow: hidden;
+    position: relative;
+    letter-spacing: -0.7px;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+}
+.ft_info_wrap {
+    padding-top: 16px;
+    margin-top: 25px;
+    border-top: 1px solid #dfb206;
+}
+.ft_content {
+    width: 1170px;
+    padding: 0 0 40px 0;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.ft_sns {
+    width: 100px;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+.ft_menu {
+    padding-top: 45px;
+}
+
+.ft_menu ul {
+    width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+
+
+
+
+
 [class^="main_cont_0"] {margin-top:50px;}
 
 
@@ -32,7 +216,25 @@
     box-sizing: border-box; 
     font-weight:bold;
 }
-
+.blind {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    /* line-height: 0; */
+    text-indent: -9999px;
+}
+.ft_menu {
+    padding-top: 45px;
+}
+ol, ul {
+    list-style: none;
+}
+.ft_menu ul {
+    width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 /*second font*/
 .main_cont_wrap .area_sc span.sc_txt {
     position:absolute; 
@@ -44,7 +246,43 @@
     color:#5c5953; 
     margin-left:25px;
 }
+.main_page .conts_more {
+    margin: 100px 0 100px 0;
+}
+.ft_menu ul li {
+    float: left;
+    padding: 0 13px;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 100%;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
 
+.mark_webaward p:before {
+    content: '';
+    display: inline-block;
+    box-sizing: border-box;
+    width: 174px;
+    height: 60px;
+    background: url(../img/logo_webaward2017.png) left top no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+}
+.conts_more ul li figure figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px 0 30px;
+    height: 61px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #373737;
+    overflow: hidden;
+}
 .main_cont_wrap .area_sc span.sc_txt:before {
     content: ''; 
     position:absolute; 
