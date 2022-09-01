@@ -1,6 +1,97 @@
 
+.hd_fixed.fix .hd_content .logo h1 a:before {
+    content: '';
+    width: 27px;
+    height: 28px;
+    display: inline-block;
+    background: url(../img/bg_w_h1_logo.png) left top no-repeat;
+    background-size: 27px 28px;
+}
+
+.hd_fixed.fix .hd_content .area_gnb .gnb_menu ul > li.dp1 p.dp1_tit > a {
+    position: relative;
+    display: block;
+    padding: 20px 0 0 0;
+    height: 60px;
+    box-sizing: border-box;
+}
+#wrap .main-pop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 .main_page .conts_more {
     margin: 100px 0 100px 0;
+}
+
+.hd_fixed.fix .hd_content .area_gnb .gnb_menu ul > li.dp1 {
+    height: 60px;
+}
+.hd_content .area_gnb .gnb_menu ul > li.dp1 {
+    position: relative;
+    /* display: inline-block; */
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 30px;
+    vertical-align: middle;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: bold;
+    letter-spacing: -0.1px;
+    box-sizing: border-box;
+    height: 90px;
+    float: left;
+}
+.hd_fixed.fix .hd_content .area_gnb .gnb_menu ul > li.dp1 p.dp1_tit > a {
+    position: relative;
+    display: block;
+    padding: 20px 0 0 0;
+    height: 60px;
+    box-sizing: border-box;
+}
+.hd_fixed.fix .hd_content .area_gnb .gnb_menu ul > li.dp1 p > a {
+    color: #fff;
+}
+.hd_content .area_gnb .gnb_menu > ul {
+    margin-left: 20%;
+}
+.hd_content .area_gnb .gnb_menu ul > li.dp1 {
+    position: relative;
+    /* display: inline-block; */
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 30px;
+    vertical-align: middle;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: bold;
+    letter-spacing: -0.1px;
+    box-sizing: border-box;
+    height: 90px;
+    float: left;
+}
+
+.hd_content .area_gnb .gnb_menu ul > li.dp1 > div.dp2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 20px;
+    width: 100%;
+    height: 0;
+    text-align: center;
+    overflow: hidden;
+    display: none;
+    box-sizing: border-box;
+    font-family: NotoSans;
+    font-weight: normal;
+}
+.hd_content .area_gnb.mo_version {
+    max-width: 100%;
+}
+.hd_content .area_gnb {
+    position: relative;
+    text-align: right;
+    z-index: 1;
 }
 .conts_more ul {
     max-width: 1170px;
@@ -68,7 +159,10 @@
     z-index: 99;
     height: 60px;
 }
-
+.hd_content .area_gnb .gnb_menu {
+    width: 100%;
+    overflow: hidden;
+}
 
 .hd_content .m_area_flex {
     display: none;

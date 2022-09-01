@@ -20,6 +20,12 @@
     <link rel="icon" sizes="60x60" href="img/apple-icon-60x60.png">
 </head>
 <body>
+    <!--header-->
+    <header id="header">
+        <!--header flex-->
+
+
+    
     <div class="hd_flex">
         <div class="area_flex" style="display: block;">
             <ul>
@@ -42,12 +48,13 @@
             </ul>
         </div>
     </div>
+<!--//header flex-->
 
-<!--fix-->
+<!--header content-->
 <div class="hd_fixed fix" style="display: block;">
     <div class="hd_content">
         <div class="logo">
-            <h1><a href="hello.html"><span class="blind">한솥</span></a></h1>
+            <h1><a href="/"><span class="blind">한솥</span></a></h1>
         </div>
         <!-- gnb -->
         <section id="gnb" class="area_gnb mo_version">
@@ -162,11 +169,92 @@
         <!-- //mobile_btn -->
     </div>
     <!--// header content -->
+    </div>
+</header>
+<!--//😀header-->
+
+<!--popup-->
+<div class="main-pop" id="pop" style="display: none;">
+    <div class="main-area">
+        <div class="main-area-cont">
+            <div class="main-slide swiper-container swiper-container-horizontal">
+                <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                    <div class="pop-01 swiper-slide swiper-slide-active">
+                        <div class="main-pop-cont">
+                            <span class="pop-img">
+                                <a href="https://www.hsd.co.kr/footer/notice_view/145?pageNo=1&amp;searchInfo%5B%27all%27%5D=" target="_self">
+                                    <img src="https://www.hsd.co.kr/images/4c9cc1e9d53d4177a0e9af78b4a2fce020220901021531.jpg" alt="팝업 이미지">
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-fraction"><span class="swiper-pagination-current">0</span> / <span class="swiper-pagination-total">0</span></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="pop-btn">
+                <span class="btn-noview">
+                    <a href="#none" class="btnp-close-oneday" idx="">하루동안 보지 않기</a>
+                </span>
+                <span class="btn-close">
+                    <a href="#none" class="btnp-close">닫기</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="dim"></div>
 </div>
+<!--popup js-->>
+<script type="text/javascript">
+    if($.cookie("main_pop") == "no") {
+        $('.main-pop').css('display', 'none');
+        $('body').removeClass('fixed').css('height', '');
+    }
 
+    $(document).ready(function(){
+        //mainSwiper
+        var popSwiper = new Swiper('.main-slide.swiper-container', {
+            simulateTouch: false,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            pagination: '.swiper-pagination',
+            paginationType: 'fraction',
+            paginationClickable: true,
+            loop: $(".main-slide.swiper-container").length > 1 ? true : false,
+            //autoplay: 2500,
+            autoplayDisableOnInteraction: false
+        });
 
+        //mobile_height
+        $(function mobile_h() {
+            if(window.innerWidth <= 1023) {
+                $('body').css('height', $(window).height()).addClass('fixed');
+            }
+        });
 
+        //popup
+        $(function main_pop() {
+            // 닫기
+            $('.btnp-close').on('click', function() {
+                $('.main-pop').css('display', 'none');
+                $('body').removeClass('fixed').css('height', '');
+            });
 
+            // 하루동안보지않기
+            $('.btnp-close-oneday').on('click',function(){
+                $.cookie("main_pop", "no", {expires:1, path : "/"});
+                $('.main-pop').css('display', 'none');
+                $('body').removeClass('fixed').css('height', '');
+            });
+        });
+    });
+</script>
+<!--//popup😀-->
+
+<!--container 시작-->
     <div class="hd_content">
         <div class="logo">
             <h1>
@@ -225,16 +313,6 @@
         </a>
     
     </div>
-
-    
-
-
-
-
-
-
-
-
 
      <!-- //main_visual -->
     <div class="main_cont_01">
