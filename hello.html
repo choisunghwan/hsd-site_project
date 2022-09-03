@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="kr">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 
     <!--타이틀(title)-->
     <title>한솥</title>
@@ -19,6 +19,16 @@
 
     <!--HTML에 JS 연결-->
     <script src="js/hello.js"></script>
+    <script src="js/hansot.common.js"></script>
+    <script src="js/jquery-1.12.4min.js"></script>
+    <script src="js/jquery-ui-1.12.1.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/ui.common.js"></script>
+    <script src="js/ui.main.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/tss.js"></script>
+    <script src="js/tss.util.js"></script>
 
     <!--CDN(bootstrap4)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -69,7 +79,7 @@
 <div class="hd_fixed fix" style="display: block;">
     <div class="hd_content">
         <div class="logo">
-            <h1><a href="/"><span class="blind">한솥</span></a></h1>
+            <h1><a href="/static"><span class="blind">한솥</span></a></h1>
         </div>
         <!-- gnb :Global Navigation Bar (공통 내비게이션 바 or 레이어를 의미함. 주요 메뉴 및 기능 페이지로 빠르게 전환할 수 있도록 링크를 포함하고 있음.) -->
         <section id="gnb" class="area_gnb mo_version">
@@ -89,7 +99,7 @@
             <div class="gnb_menu">
                 <ul class="" style="height: 60px;">
                     <li class="dp1">
-                        <p class="dp1_tit"><a href="#none">BRAND</a></p>
+                        <p class="dp1_tit"><a href="/menu.html">BRAND</a></p>
                         <div class="dp2" style="display: none;">
                             <ul>
                                 <li class=""><a href="/brand/story">브랜드 스토리</a></li>
@@ -112,7 +122,7 @@
                         </div>
                     </li>
                     <li class="dp1">
-                        <p class="dp1_tit"><a href="#none">MENU</a></p>
+                        <p class="dp1_tit"><a href="menu.html">MENU</a></p>
                         <div class="dp2" style="display: none;">
                             <ul>
                                 <li><a href="/menu/menu_list">전체메뉴</a></li>
@@ -153,7 +163,7 @@
                         </div>
                     </li>
                     <li class="dp1">
-                        <p class="dp1_tit"><a href="#none">HANSOT</a></p>
+                        <p class="dp1_tit"><a href="/login.html">HANSOT</a></p>
                         <div class="dp2" style="display: none;">
                             <ul>
                                 <li><a href="/hansot/promise">한솥의 약속</a></li>
@@ -174,7 +184,7 @@
         <div class="bg_layer" style="opacity: 0; height: 0px;"></div>
         <!-- //pc:bg -->
         <!-- mobile_btn -->
-        <div class="mobile_menu_btn">
+        <div class="mobile_menu_btn">f
             <div class="hamburger" id="hamburger-6">
                 <span class="line"></span>
                 <span class="line"></span>
