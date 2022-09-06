@@ -1,0 +1,620 @@
+@charset "utf-8";
+/**************************** s:: 공통 *************************/
+#container.sub_page.bg {background-color: #fff;}
+#container .content.brand {max-width:inherit;}
+
+/**************************** e:: 공통 *************************/
+/*브랜드 스토리*/
+.brand_visual_wrap {overflow: hidden; position: relative; height: 750px; width: 100%; z-index: 1; background-color: #fff;}
+.brand_visual_wrap .visual_bg {background: url(../images/brand/brand_visual_01.jpg) 50% 50% no-repeat; background-size: cover; height: 750px;}
+
+.bs_wrap {position:relative; width:100%;}
+.bs_wrap.animated {
+	-webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+.bs_wrap .bs_cont {max-width:1170px; margin:0 auto; width:100%;}
+.bs_wrap .bs_cont .bs_txt p {margin-top:25px; line-height:27px; font-size:17px;}
+.bs_wrap .bs_cont .bs_txt p:first-child {margin-top:0;}
+
+.bs_wrap .bs_txt_wrap h3.h3_tit {position:relative; padding-top:60px; font-weight:800; line-height:45px;}
+.bs_wrap .bs_txt_wrap h3.h3_tit:after {content: ''; width:40px; height:4px; background-color: #373737; display:block; margin:30px 0 16px 2px;}
+
+/*브랜드 타이틀*/
+.brand .menu_tit {margin:0 auto; padding-bottom:7px; width:1170px; font-weight:bold; color:#a99e92; font-size:20px;}
+
+/*브랜드 스토리 > section01*/
+.section_01 {background-color: #e2ddd7; padding:77px 0 100px 0; box-sizing: border-box;}
+.brand_story .section_01 {height:665px;}
+.section_01 .bs_cont {display:table; width:100%;}
+.section_01 h2.h2_tit {font-weight:normal; width:570px; font-size:46px;}
+.section_01 h2.h2_tit, .section_01 .bs_txt {display:table-cell; vertical-align: top;}
+.section_01 .bs_cont .bs_txt {padding-top:3px; width:600px; word-break: keep-all;}
+/*브랜드 스토리 > section02*/
+.section_02, .section_03 {background-color: #fff;}
+.section_02 .bs_cont {padding-top:70px; position:relative; overflow:hidden; width:100%;}
+.section_02 .bs_cont div.bs_img, .section_02 .bs_cont .bs_txt_wrap {float:left;}
+.section_02 .bs_cont div.bs_img {width:500px; height:600px;}
+.section_02 .bs_cont div.bs_img img {max-width:100%; width:100%; height:auto;}
+.section_02 .bs_cont .bs_txt_wrap {width:600px; height:620px; margin-left:70px; box-sizing: border-box; border-bottom:15px solid #373737;}
+/*브랜드 스토리 > section03*/
+.section_03 .bs_cont  {margin:70px auto 100px auto; position:relative; overflow:hidden;}
+.section_03 .bs_cont div.bs_img, .section_02 .bs_cont .bs_txt_wrap {float:left;}
+.section_03 .bs_cont div.bs_img {float:right; width:600px; height:500px;}
+.section_03 .bs_cont .bs_txt_wrap {width:500px; height:500px; margin-right:70px; box-sizing: border-box;}
+
+/*브랜드 스토리 > section04*/
+.section_04 {position:relative; width:100%; height:730px; background: url(../images/brand/brand_visual_02.jpg) 50% 50% no-repeat; background-size: cover;}
+.section_04 .bs_cont {position:relative; padding:130px 0; box-sizing: border-box; height:730px; color:#fff;}
+.section_04 .bs_cont h3.h3_tit {color:#fff; padding-top:0;}
+.section_04 .bs_cont h3.h3_tit:after {content:''; background-color: #fff;}
+
+/*버튼*/
+.section_03 .bs_cont .btn_wrap {position:absolute; bottom:0; left:0; width:170px;}
+.section_04 .bs_cont .btn_wrap {position: absolute; bottom:130px; left:0; width:170px;}
+.bs_cont .btn_wrap .btn.btn_st04 {margin:0;} 
+
+/*브랜드 철학*/
+.brand_philosophy .brand_visual_wrap {overflow: hidden; position: relative; height: 750px; width: 100%; z-index: 1;}
+.brand_philosophy .brand_visual_wrap .visual_bg {background: url(images/brand/brand_ph_visual_01.jpg) 50% 50% no-repeat; background-size: cover;  height: 750px;}
+/*브랜드 철학 > section_01*/
+.brand_philosophy .section_01 {height:400px;}
+.brand_philosophy .section_01 h2.h2_tit {width:570px; line-height:64px;}
+.brand_philosophy .section_01 .bs_cont .bs_txt {width:600px; padding-top:10px;}
+.brand_philosophy .section_01 .bs_cont .bs_txt p {letter-spacing: -0.027em;}
+.brand_philosophy .section_01 .bs_cont .bs_txt p span.s_block {display:inline;}
+
+/*브랜드 철학 > section_02*/
+.brand_philosophy .section_02 {z-index:3; padding-bottom:120px;}
+.brand_philosophy .section_02 .bs_cont {padding-top:0; overflow:inherit;}
+.brand_philosophy .section_02 .bs_cont:after {content: ''; clear:both; display:block;}
+.brand_philosophy .section_02 .bs_cont div.bs_img, 
+.brand_philosophy .section_02 .bs_cont .bs_txt_wrap {float:left; height:610px;}
+.brand_philosophy .section_02 .bs_cont div.bs_img {float:right; width:600px; margin-top:-60px;}
+.brand_philosophy .section_02 .bs_cont div.bs_img img {max-width:100%; width:100%; height:auto;}
+.brand_philosophy .section_02 .bs_cont .bs_txt_wrap {width:500px; margin:0 70px 0 0;  box-sizing: border-box; border-bottom:15px solid #373737;}
+.brand_philosophy .bs_wrap.section_02 .bs_txt_wrap h3.h3_tit {padding-top:130px;}
+
+/*브랜드 스토리 > section03*/
+.brand_philosophy .section_03 {position:relative; width:100%; height:670px; background: url(images/brand/brand_ph_visual_02.jpg) 50% 50% no-repeat; background-size: cover;}
+.brand_philosophy .section_03 .bs_cont {position:relative; box-sizing: border-box; height:670px; color:#fff; padding:0; overflow: hidden;}
+.brand_philosophy .section_03 .bs_cont div.bs_img {float:left; width:500px; height:670px;}
+.brand_philosophy .section_03 .bs_cont div.bs_txt_wrap{float:right; width:670px;  margin:130px 0 0 0; padding-left:70px; box-sizing: border-box;}
+.brand_philosophy .section_03 .bs_cont h3.h3_tit {color:#fff; padding-top:0;}
+.brand_philosophy .section_03 .bs_cont h3.h3_tit:after {content: ''; background-color: #fff;}
+
+/*브랜드 스토리 > section04*/
+.brand_philosophy .section_04  {background: #f6f5f5; height:730px; box-sizing: border-box;}
+.brand_philosophy .section_04 .bs_cont {padding:130px 0 0 0; position:relative; overflow:hidden; color:#373737;}
+.brand_philosophy .section_04 .bs_cont div.bs_img, .section_02 .bs_cont .bs_txt_wrap {float:left;}
+.brand_philosophy .section_04 .bs_cont div.bs_img {float:right; width:670px; height:430px;}
+.brand_philosophy .section_04 .bs_cont .bs_txt_wrap {width:500px; height:430px; margin-right:70px; box-sizing: border-box;}
+.brand_philosophy .section_04 .bs_cont h3.h3_tit {color:#373737;}
+.brand_philosophy .section_04 .bs_cont h3.h3_tit:after {content: ''; background-color: #373737;}
+
+/*버튼*/
+.section_04 .bs_cont .btn_wrap {position: absolute; bottom:130px; left:0; width:170px;}
+.brand_philosophy .section_04 .bs_cont .btn_wrap {bottom:170px;}
+
+/*브랜드 유산*/
+.brand_legacy {padding-bottom:28px;}
+.brand_legacy .brand_visual_wrap .visual_bg {background: url(../images/brand/brand_lg_visual_01.jpg) 50% 50% no-repeat; height: 750px; background-size: cover;}
+.brand_legacy .bs_wrap.section_01 {height:400px;}
+.brand_legacy .bs_wrap.section_01 h2.h2_tit {line-height:140%;}
+.brand_legacy .bs_wrap.section_02 .bs_cont,
+.brand_legacy .bs_wrap.section_03 .bs_cont,
+.brand_legacy .bs_wrap.section_04 .bs_cont,
+.brand_legacy .bs_wrap.section_05 .bs_cont {padding:80px 0 0 0; margin:0 auto; height:370px; box-sizing: border-box;}
+
+.brand_legacy .section_02,
+.brand_legacy .section_04 {background-color: #f6f5f5; background-image: none; height:370px;}
+.brand_legacy .section_04 h3.h3_tit,
+.brand_legacy .section_04 .bs_cont {color:#373737;}
+.brand_legacy .bs_wrap .lg_wrap {position:relative; width:100%; /*display:table;*/}
+.brand_legacy .bs_wrap .lg_wrap .g_visual {position:relative; display:block; width:760px; padding-right:380px; box-sizing: border-box; text-align:right;}
+.brand_legacy .bs_wrap .lg_wrap .g_visual:after {content: ''; display:block; width:290px; height:2px; background-color: #e2ddd7; position:absolute; right:0; top:49%; margin:0 40px 0 40px;}
+.brand_legacy .bs_wrap .lg_wrap .g_visual,
+.brand_legacy .bs_wrap .lg_wrap figcaption {float:left; }
+.brand_legacy .bs_wrap .lg_wrap figcaption {width:auto; padding-top:25px;}
+.brand_legacy .bs_wrap .lg_wrap figcaption h3.h3_tit span.s_block {line-height:120%;}
+.brand_legacy .bs_wrap .lg_wrap figcaption h3.h3_tit span.lg_tit {color:#f2c000;} 
+.brand_legacy .bs_wrap .lg_wrap figcaption h3.h3_tit span.lg_txt {color:#5c5953; font-size:20px; font-weight:800; padding-top:14px;} 
+.brand_legacy .bs_wrap .lg_wrap figcaption .lg_cont_txt {padding-top:24px; line-height:27px; font-size:17px;}
+.brand_legacy .section_03.bs_wrap .lg_wrap .g_visual,
+.brand_legacy .section_05.bs_wrap .lg_wrap .g_visual {float:right; padding:0 0 0 380px; text-align:left;}
+.brand_legacy .section_03.bs_wrap .lg_wrap .g_visual:after,
+.brand_legacy .section_05.bs_wrap .lg_wrap .g_visual:after {content: ''; left:0;}
+
+.brand_legacy .section_03.bs_wrap .lg_wrap figcaption,
+.brand_legacy .section_05.bs_wrap .lg_wrap figcaption {float:right; text-align:right;}
+
+.brand_legacy .section_05 {border-bottom:2px solid #f6f5f5;}
+/*ESG 경영*/
+.brand_esg .section_01 {height:auto;}
+/*.brand_esg .section_01 .bs_cont div.bs_img img {max-width:100%; width:100%; height:auto;}*/
+.brand_esg .section_01 .bs_cont div.bs_img img {max-width:100%; width:100%; height:auto;}
+.brand_esg .section_01 .bs_cont div.bs_img,
+.brand_esg .section_01 .bs_cont .bs_txt {float:left; height:auto;}
+.brand_esg .section_01 .bs_cont div.bs_img {float:left; width:500px; margin-top:60px; margin-left: 40px;}
+
+/*ESG 경영 하위에 SDGs*/
+.brand_sdgs .section_01 {height:auto;}
+/*.brand_esg .section_01 .bs_cont div.bs_img img {max-width:100%; width:100%; height:auto;}*/
+.brand_sdgs .section_01 .bs_cont div.bs_img img {max-width:100%; width:100%; height:auto;}
+.brand_sdgs .section_01 .bs_cont div.bs_img,
+.brand_sdgs .section_01 .bs_cont .bs_txt {float:left; height:auto;}
+.brand_sdgs .section_01 .bs_cont div.bs_img {float:left; width:500px; margin-top:60px; margin-left: 40px;}
+.brand_sdgs .brand_visual_wrap .visual_bg {background: url(../images/brand/brand_visual_01_sdgs.png) 50% 50% no-repeat; background-size: cover; height: 750px;}
+
+/*브랜드 BI*/
+.brand_bi .brand_visual_wrap .visual_bg {background: url(../images/brand/brand_bi_visual_01.jpg) 50% 50% no-repeat; height: 750px; background-size: cover;}
+.brand_bi .section_01 {height:400px;}
+.brand_bi .section_01 h2.h2_tit {width:555px;}
+.brand_bi .section_01 .bs_cont .bs_txt {width:615px;}
+/*.brand_bi .section_01 .bs_cont .bs_txt p span.s_block {display:inline;}*/
+
+.brand_bi .section_02 {height:907px; padding:100px 0 130px 0; box-sizing: border-box;}
+.brand_bi .section_02 .bs_cont {height:675px; padding:0; box-sizing: border-box;}
+.brand_bi .section_02 .bs_cont .bs_img {position:relative; width:600px; height:675px;  float:right; text-align:center;}
+.brand_bi .section_02 .bs_cont .bs_img:after {content: ''; width:100%; position:absolute; left:0; bottom:30px; display:block; border-bottom:15px solid #373737;}
+.brand_bi .section_02 .bs_cont .bs_img img {width:570px; height:570px;}
+.brand_bi .section_02 .bs_cont .bs_txt_wrap {width:500px; margin:0 70px 0 0; border:0;}
+.brand_bi .section_02 .bs_cont .bs_txt_wrap h3.h3_tit {padding-top:30px;}
+.brand_bi .section_02 .bs_cont .bi_img_wrap {position:absolute; bottom:0; overflow: hidden;}
+.bi_img_wrap figure.img_cont {float:left; width:44%;}
+.bi_img_wrap figure.img_cont span img {width:100%; max-width:100%; height:auto;}
+.bi_img_wrap figure.img_cont.left {margin:0 3% 0 0;}
+.bi_img_wrap figure.img_cont.right {margin:0 0 0 3%;}
+.bi_img_wrap figure.img_cont figcaption span.bi_tit {padding-top:20px; display:inline-block;}
+
+.brand_bi .section_03 {background-color: #373737; padding:125px 0;}
+.brand_bi .section_03 .bs_cont {padding:0; margin:0 auto;}
+.brand_bi .section_03 .bs_cont .bs_txt_wrap {width:100%; height:auto; margin:0;}
+.brand_bi .section_03 .bs_txt_wrap h3.h3_tit {position:relative; padding:0; line-height:100%; color:#e2ddd7;}
+.brand_bi .section_03 .bs_txt_wrap h3.h3_tit:after {content: ''; width:40px; height:4px; background-color: #e2ddd7; display:block; margin:40px 0 80px 0;}
+.brand_bi .section_03 .bs_txt_wrap .bs_txt {position:relative; overflow:hidden;}
+.brand_bi .section_03 .bs_txt_wrap .bs_txt dl.value_list {position:relative; float:left; width:570px; height:240px; padding:60px 0 0 0; background-color: #f6f5f5; box-sizing: border-box; text-align:center;}
+.brand_bi .section_03 .bs_txt_wrap .bs_txt dl.value_list:nth-child(even) {margin-left:30px;}
+.brand_bi .section_03 .bs_txt_wrap .bs_txt dl.value_list.bt {margin-bottom:30px;}
+.brand_bi .section_03 .bs_txt_wrap .bs_txt dl.value_list:after {content: ''; width:20px; height:20px; position:absolute; right:0; bottom:0; background: url(../images/brand/brand_bi_bg.jpg) left top no-repeat;}
+.brand_bi .section_03 .bs_txt_wrap .bs_txt dl.value_list.first {margin-left:0;}
+.brand_bi .section_03 .bs_txt_wrap .bs_txt dl.value_list dt.value_tit {position:relative;}
+.brand_bi .section_03 .bs_txt_wrap .bs_txt dl.value_list dt.value_tit strong {color:#5c5953; font-size:18px; font-family: Roboto; letter-spacing: 1px;}
+.brand_bi .section_03 .bs_txt_wrap .bs_txt dl.value_list dt.value_tit:after {content: ''; display:block; width:40px; height:4px; background-color: #dad8d8; margin:25px auto 25px auto;} 
+.brand_bi .section_03 .bs_txt_wrap .bs_txt dl.value_list dd {font-size:16px; line-height:26px; color:#777777;}
+
+.brand_bi .section_04 {background: #f6f5f5; height:650px; padding:130px 0; box-sizing: border-box; margin:0;}
+.brand_bi .section_04 .bs_cont {position:relative; padding:0; box-sizing: border-box; color:#373737; overflow:hidden;}
+.brand_bi .section_04 .bs_cont .bs_txt_wrap h3.h3_tit {color:#373737;}
+.brand_bi .section_04 .bs_cont .bs_txt_wrap h3.h3_tit:after {background-color:#373737;}
+.brand_bi .section_04 .bs_cont .bs_txt_wrap,
+.brand_bi .section_04 .bs_cont .bs_img {float: left;}
+.brand_bi .section_04 .bs_cont .bs_txt_wrap {width:440px; height:405px; margin-right:60px; position:relative;}
+.brand_bi .section_04 .bs_cont .bs_txt_wrap:after {content: ''; display:block; width:100%; height:15px; background-color: #373737; position:absolute; left:0; bottom:0;}
+.brand_bi .section_04 .bs_cont .bs_img {width:670px; float: right; padding-top:10px;}
+.brand_bi .section_04 .bs_cont .bs_img table.color_tb {width:100%;}
+.brand_bi .section_04 .bs_cont .bs_img table.color_tb tr td {border-left:10px solid #f6f5f5; border-bottom:10px solid #f6f5f5; width:25%; height:100px; padding:20px 0 0 20px; color:#fff; font-family: Roboto; font-weight:normal; vertical-align: top; box-sizing: border-box;}
+.brand_bi .section_04 .bs_cont .bs_img table.color_tb tr td:first-child {border-left:0;}
+.brand_bi .section_04 .bs_cont .bs_img table.color_tb tr td.bl {background-color: #1d1d1b;}
+.brand_bi .section_04 .bs_cont .bs_img table.color_tb tr td.y {background-color: #f2c000; color:#fff;}
+.brand_bi .section_04 .bs_cont .bs_img table.color_tb tr td.b {background-color: #98754a;}
+.brand_bi .section_04 .bs_cont .bs_img table.color_tb tr td.w {color:#c3c1c1; background-color: #fff;}
+.brand_bi .section_04 .bs_cont .bs_img table.color_tb tr td.dg {background-color: #575756;}
+.brand_bi .section_04 .bs_cont .bs_img table.color_tb tr td.wg {background-color:#d1c7bf;}
+.brand_bi .section_04 .bs_cont .bs_img table.color_tb tr td.lg {background-color:#dadada;}
+.brand_bi .section_04 .bs_cont .bs_img table.color_tb tr td.g {background-color:#9d9d9c;}
+/*.brand_bi .section_04 .bs_cont .bs_img table.color_tb tr td.none {background-color: #fff;}*/
+.sdgs_small_title {
+	font-size:36px;
+}
+
+/*한솥 가맹점 > section03*/
+.hansot_store .section_03 {margin-top:130px; background-color: #373737;}
+.hansot_store .section_03 .hs_cont  {padding:130px 0 100px 0; position:relative; overflow:hidden;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap {position:relative; margin-left:-30px; overflow: hidden;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new {position:relative; float:left; vertical-align: top; width:570px; height:140px; margin:0 0 30px 30px; padding:40px 30px 0 190px; box-sizing: border-box; background-color: #eeecec;}
+/*.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new:before {content: ''; width:130px; height:130px; background: url(../images/franchise/icon_tip.png) left top no-repeat; background-size: 910px 130px;  display:inline-block; position:absolute; left:30px; top:30px;}*/
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.h3:before {display:none;}
+
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_01:before {background-position: 0;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_01{background-image: url("../images/esg/1.png"); background-repeat: no-repeat; background-size: 20%;  display:inline-block; background-position: 10px 12px;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_02:before {background-position: -130px 0;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_02{background-image: url("../images/esg/2.png"); background-repeat: no-repeat; background-size: 20%;  display:inline-block; background-position: 10px 12px;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_03:before {background-position: -260px 0;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_03{background-image: url("../images/esg/3.png"); background-repeat: no-repeat; background-size: 20%;  display:inline-block; background-position: 10px 12px;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_04:before {background-position: -390px 0;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_04{background-image: url("../images/esg/4.png"); background-repeat: no-repeat; background-size: 20%;  display:inline-block; background-position: 10px 12px;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_05:before {background-position: -520px 0;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_05{background-image: url("../images/esg/5.png"); background-repeat: no-repeat; background-size: 20%;  display:inline-block; background-position: 10px 12px;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_06:before {background-position: -650px 0;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_06{background-image: url("../images/esg/6.png"); background-repeat: no-repeat; background-size: 20%;  display:inline-block; background-position: 10px 12px;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_07:before {background-position: -780px 0;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_07{background-image: url("../images/esg/7.png"); background-repeat: no-repeat; background-size: 20%;  display:inline-block; background-position: 10px 12px;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_08:before {background-position: -910px 0;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_08{background-image: url("../images/esg/8.png"); background-repeat: no-repeat; background-size: 20%;  display:inline-block; background-position: 10px 12px;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_09:before {background-position: -1040px 0;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_09{background-image: url("../images/esg/9.png"); background-repeat: no-repeat; background-size: 20%;  display:inline-block; background-position: 10px 12px;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_10:before {background-position: -1170px 0;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_10{background-image: url("../images/esg/10.png"); background-repeat: no-repeat; background-size: 20%;  display:inline-block; background-position: 10px 12px;}
+
+
+
+
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new:after {content: ''; width:auto; height:20px; position:absolute; right:0; bottom:0; display:inline-block; background-color: #eeecec; border-left:20px solid #eeecec; border-bottom:20px solid #373737; /*background: url(../images/franchise/bg_store.png) left top no-repeat;*//* background-size: 20px 20px;*/}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.h3 {padding:0; background-color: transparent; color:#e2ddd7;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.h3:after {display:none;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.h3 p {color:#e2ddd7;}
+
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new h4.h4_tit {font-size:20px; font-weight:bold;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new h4.h4_tit span.s_block {display:inline;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.h3 h3.h3_tit:after {content: ''; width:40px; height:4px; background-color: #dad8d8; display:block; margin:25px 0 0 0;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.h3 h3.h3_tit:after {content: ''; color:#e2ddd7; margin:40px 0 20px 0;}
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new p {position:relative; color:#909090; word-break: keep-all; }
+.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new p span.s_block {display:inline;}
+
+
+
+@media all and (max-width:1190px){
+	.section_01 h2.h2_tit {width:35%;}
+	.bs_wrap .bs_txt_wrap h3.h3_tit {padding-top:0;}
+	p span.s_block {display:inline;}
+
+	.section_01 .bs_txt {width:auto; box-sizing: border-box;}
+	
+	.section_02 .bs_cont div.bs_img {width:400px; height:500px;}
+	.section_02 .bs_cont .bs_txt_wrap {float:right; margin-left:0; height:500px;}
+
+	.section_03 .bs_cont .bs_txt_wrap {margin-left:0; padding-right:10px;}
+
+	/*브랜드 철학 > section_01*/
+	.brand_philosophy .section_01 .bs_cont {display:block;}
+	.brand_philosophy .section_01 h2.h2_tit, .brand_philosophy .section_01 .bs_txt {display:block; width:100%; margin:0;}
+
+	/*브랜드 철학 > section_02*/
+	.brand_philosophy .section_02 .bs_cont div.bs_img,
+	.brand_philosophy .section_02 .bs_cont .bs_txt_wrap {height:570px; margin:0 0 0 0;}
+	.brand_philosophy .section_02 .bs_cont div.bs_img {width:500px; height:570px; text-align:right;}
+	.brand_philosophy .section_02 .bs_cont div.bs_img img {height:100%; width:auto;}
+
+	/*브랜드 철학 > section_03*/
+	.brand_philosophy .section_03 .bs_cont div.bs_txt_wrap {width:500px; padding-left:0;}
+	.brand_philosophy .section_03 .bs_cont h3.h3_tit  {margin-top:30px;}
+
+	/*브랜드 철학 > section_04*/
+	.brand_philosophy .section_04 .bs_cont .bs_txt_wrap {width:400px;}
+	.brand_philosophy .section_04 .bs_cont h3.h3_tit {margin-top:30px;}
+
+	/*브랜드 유산*/
+	.brand_legacy .bs_wrap.section_01 {min-height:300px; height:auto;}
+	.brand_legacy .bs_wrap.section_01 h2.h2_tit {font-size:30px;}
+	.brand_legacy .section_01 .bs_txt {padding-top:15px;}
+	.brand_legacy .bs_wrap .lg_wrap .g_visual {width:60%; padding-right:270px;}
+	.brand_legacy .bs_wrap .lg_wrap .g_visual:after {content: ''; width:200px;}
+	.brand_legacy .bs_wrap .lg_wrap figcaption {width:30%;}
+
+	/*브랜드 BI*/
+	.brand_bi .section_02 .bs_cont {height:600px;}
+	.brand_bi .section_02 .bs_cont .bs_txt_wrap {float:left; height:600px; margin:0;}
+	.brand_bi .section_02 .bs_cont .bs_img {width:500px; height:600px;}
+	.brand_bi .section_02 .bs_cont .bs_img img {width:470px; height:470px;}
+
+	.brand_bi .section_03 .bs_cont .bs_txt_wrap {padding-right:0;}
+	.brand_bi .section_03 .bs_txt_wrap .bs_txt dl.value_list {width:100%; margin-left:0; margin-top:20px; height:auto; padding:50px 0;}
+	.brand_bi .section_03 .bs_txt_wrap .bs_txt dl.value_list.first {margin-top:0;}
+	.brand_bi .section_03 .bs_txt_wrap .bs_txt dl.value_list:nth-child(even) {margin-left:0;}
+	.brand_bi .section_03 .bs_txt_wrap .bs_txt dl.value_list.bt {margin-bottom:0;}
+
+	.brand_bi .section_04 .bs_cont .bs_img {width:50%; float:right;}
+	.brand_bi .section_04 .bs_cont .bs_img table.color_tb {width:100%;
+  }
+  /*브랜드 ESG > section_02*/
+  .brand_esg .section_01 .bs_cont div.bs_img,
+  .brand_esg .section_01 .bs_cont .bs_txt {padding-bottom: 50px; margin:0 0 0 0;}
+  .brand_esg .section_01 .bs_cont div.bs_img {width:500px; height:auto; text-align:right;}
+  .brand_esg .section_01 .bs_cont div.bs_img img {height:auto; width:auto;}
+  
+  /*ESG 경영 하위 SDGs*/
+  .brand_sdgs .section_01 .bs_cont div.bs_img,
+  .brand_sdgs .section_01 .bs_cont .bs_txt {padding-bottom: 50px; margin:0 0 0 0;}
+  .brand_sdgs .section_01 .bs_cont div.bs_img {width:500px; height:auto; text-align:right;}
+  .brand_sdgs .section_01 .bs_cont div.bs_img img {height:auto; width:auto;}
+
+
+}
+
+@media all and (max-width:1023px){
+	#container.sub_page.bg {background-color: #eeecec;}
+	
+	.bs_wrap.animated {
+		-webkit-animation-duration: 0.5s;
+	    -moz-animation-duration: 0.5s;
+	    -o-animation-duration: 0.5s;
+	    animation-duration: 0.5s;
+	}
+	/*브랜드 타이틀*/
+	.brand .menu_tit {padding-bottom: 8px; font-size:18px;}
+
+	.bs_wrap .bs_txt_wrap h3.h3_tit.fz_01 {font-size:28px; line-height:40px;}
+	.bs_wrap .bs_cont {max-width:768px; margin:0 auto; width:100%;}
+	.bs_wrap .bs_cont .bs_txt p {font-size:15px; line-height:25px;}
+
+	.bs_wrap.section_01 .bs_cont .bs_txt p:first-child {margin-top:10px;}
+	.brand_story .section_01 {height:auto;}
+	.section_01 {padding:50px 15px;}
+	.section_01 h2.h2_tit {width:35%; font-size: 30px;}
+	.section_01 .bs_txt {width:100%; padding:0; box-sizing: border-box;}
+
+	.section_01 .bs_cont {display:block;}
+	.section_01 h2.h2_tit, .section_01 .bs_txt {display:block; width:100%;}
+	.section_01 .bs_cont .bs_txt {width:100%; word-break: inherit;}
+
+	.section_02 {padding:0 15px; box-sizing: border-box; width:100%;}
+	.section_02 .bs_cont {padding-top:40px;}
+	.section_02 .bs_cont .bs_txt_wrap {min-height:327px; height:auto;}
+	.section_02 .bs_cont .bs_txt_wrap .bs_txt {padding-bottom:40px;}
+	.section_02 .bs_cont div.bs_img, .section_02 .bs_cont .bs_txt_wrap {float:none;}
+	.section_02 .bs_cont div.bs_img {margin:0 auto;}
+	.section_02 .bs_cont .bs_txt_wrap {margin:30px 0 auto 0; width:100%;}
+	
+	.section_03 {padding:0 15px; width:100%; box-sizing: border-box;}
+	.section_03 .bs_cont {padding:0 0 40px 0;}
+	.section_03 .bs_cont div.bs_img, .section_03 .bs_cont .bs_txt_wrap {float:none;}
+	.section_03 .bs_cont div.bs_img {margin:40px auto 0 auto; width:500px; height:400px;}
+	.section_03 .bs_cont div.bs_img img {width:100%;}
+
+	.section_03 .bs_cont .bs_txt_wrap {margin:45px auto 45px auto; width:100%; min-height:290px; height:auto; padding-right:0;}
+	.section_03 .bs_cont .bs_txt_wrap .bs_txt {margin:0 0 55px 0;} 
+	.section_03 .bs_cont .btn_wrap {position:relative;}
+
+	.section_04 {padding:0 15px; width:100%; box-sizing: border-box;}
+	.section_04 {height:580px;}
+	.section_04 .bs_cont {padding:60px 0; height:580px;}
+	.section_04.bs_wrap .bs_txt_wrap h3.h3_tit.fz_01 {margin-top:0;}
+	.section_04 .bs_cont  .bs_txt {margin-bottom:60px;}
+	.section_04 .bs_cont .btn_wrap {bottom:40px;}
+		
+	/*브랜드 철학 > section_01*/
+	.brand_philosophy .section_01 {padding:50px 15px 104px 15px; height:auto;}
+	.brand_philosophy .section_01 h2.h2_tit, .brand_philosophy .section_01 .bs_txt {padding:0;}
+	.brand_philosophy .section_01 h2.h2_tit {line-height:42px;}
+	.brand_philosophy .section_01 .bs_cont .bs_txt {width:100%;}
+
+	/*브랜드 철학 > section_02*/
+	.brand_philosophy .section_02 {padding:0 15px 40px 15px;}
+	.brand_philosophy .section_02 .bs_cont div.bs_img, 
+	.brand_philosophy .section_02 .bs_cont .bs_txt_wrap {float:none; display:block; height:auto;}
+	.brand_philosophy .section_02 .bs_cont div.bs_img {width:400px; height:auto; margin:0 auto;}
+	.brand_philosophy .section_02 .bs_cont div.bs_img img {margin:-60px auto 0 auto; width:100%; height:auto;}
+	.brand_philosophy .bs_wrap.section_02 .bs_txt_wrap {width:100%; min-height:auto; padding:40px 0 0 0;}
+	.brand_philosophy .bs_wrap.section_02 .bs_txt_wrap h3.h3_tit {padding:0 !important;}
+
+	/*브랜드 철학 > section_03*/
+	.brand_philosophy .section_03 {height:auto;}
+	.brand_philosophy .section_03 .bs_cont {height:auto;}
+	.brand_philosophy .section_03 .bs_cont div.bs_img,
+	.brand_philosophy .section_03 .bs_cont .bs_txt_wrap {float:none;}
+	.brand_philosophy .section_03 .bs_cont div.bs_img {width:400px; height:570px;}
+	.brand_philosophy .section_03 .bs_cont .bs_txt_wrap {float:none;}
+	.brand_philosophy .section_03 .bs_cont div.bs_txt_wrap {float:none; margin:4px 0 0 0; width:100%;}
+	.brand_philosophy .section_03 .bs_cont .bs_txt_wrap .bs_txt {margin:0 0 50px 0;}
+
+	/*브랜드 철학 > section_04*/
+	.brand_philosophy .section_04 {height:auto;}
+	.brand_philosophy .section_04 .bs_cont {padding:40px 0 0 0; height:auto;}
+	.brand_philosophy .section_04 .bs_cont div.bs_img {width:100%; height:auto; float:none;}
+	.brand_philosophy .section_04 .bs_cont div.bs_img img {max-width:100%; width:100%; height:auto;}
+	.brand_philosophy .section_04 .bs_cont .bs_txt_wrap {width:100%; height:auto; margin:0;}
+	.brand_philosophy .section_04 .bs_cont .btn_wrap {position:relative; left:0; bottom:0; padding:0 0 40px 0;}
+
+	/*브랜드 유산*/
+	.brand_legacy {padding-bottom:0;}
+	.brand_legacy .bs_wrap {height:auto;}
+	.brand_legacy .bs_wrap .bs_cont {max-width:320px; margin:0 auto; box-sizing: border-box;}
+	.brand_legacy .bs_wrap.section_02 .bs_cont,
+	.brand_legacy .bs_wrap.section_03 .bs_cont,
+	.brand_legacy .bs_wrap.section_04 .bs_cont,
+	.brand_legacy .bs_wrap.section_05 .bs_cont {padding:60px 0 60px 0; height:auto; box-sizing: border-box;}
+
+	.brand_legacy .bs_wrap .lg_wrap .g_visual, 
+	.brand_legacy .bs_wrap .lg_wrap figcaption {width:100% !important; float:none !important; text-align: center !important;}
+	.brand_legacy .bs_wrap .lg_wrap figcaption h3.h3_tit span.lg_txt {font-size:18px;}
+	.brand_legacy .bs_wrap .lg_wrap figcaption .lg_cont_txt {font-size:15px; line-height:25px;}
+	.brand_legacy .bs_wrap .lg_wrap .g_visual {padding-right:0 !important; padding-left:0 !important;}
+	.brand_legacy .bs_wrap .lg_wrap .g_visual:after {display: none !important;}
+	.brand_legacy .bs_wrap .lg_wrap .g_visual img {width:50% !important;}
+
+	.brand_legacy .section_03,
+	.brand_legacy .section_05 {background-color: #fff; padding:0 15px; box-sizing: border-box;}
+	.brand_legacy .section_01.bs_wrap .bs_cont {max-width:768px; margin:0 auto;}
+	.brand_legacy .section_01 .bs_txt {padding-top: 0;}
+
+	/*ESG 경영*/
+	.brand_esg .section_01 {height:auto;}
+  	.brand_esg .section_01 .bs_cont div.bs_img, .section_01 .bs_cont .bs_txt {float:none;}
+  	.brand_esg .section_01 .bs_cont div.bs_img {margin:0 auto;}
+  	
+  	/*ESG 경영 하위 SDGs*/
+  	.brand_sdgs .section_01 {height:auto;}
+  	.brand_sdgs .section_01 .bs_cont div.bs_img, .section_01 .bs_cont .bs_txt {float:none;}
+  	.brand_sdgs .section_01 .bs_cont div.bs_img {margin:0 auto;}
+  
+	/*브랜드 BI*/
+	.brand_bi .section_01 {height:auto;}
+	.brand_bi .section_01 h2.h2_tit,
+	.brand_bi .section_02 .bs_cont {height:auto;}
+	.brand_bi .section_01 .bs_cont .bs_txt {width:100%;}
+	.brand_bi .section_02 {height:auto; padding:40px 15px; box-sizing: border-box;}
+	.brand_bi .section_02 .bs_cont .bs_txt_wrap,
+	.brand_bi .section_02 .bs_cont .bs_img {width:100%; height:auto; margin:0 auto; float:none; min-height:auto; min-width:100%;}
+	.brand_bi .section_02 .bs_cont .bs_img img {width:100%; max-width:100%; height:auto;}
+	.brand_bi .section_02 .bs_cont .bi_img_wrap {position: relative; top:0; padding-bottom:70px;}
+	.brand_bi .section_02 .bs_cont .bi_img_wrap:after {content: ''; width:100%; height:15px; background-color: #373737; display:block; position:absolute; left:0; bottom:0;}
+	.brand_bi .section_02 .bs_cont .bi_img_wrap span.g_visual {width:100%;}
+	.brand_bi .section_02 .bs_cont .bi_img_wrap span.g_visual img {max-width:100%; width:100%;}
+	.brand_bi .section_02 .bs_cont .bs_txt_wrap {padding-top:30px;}
+	.brand_bi .section_02 .bs_cont .bs_txt_wrap .bs_txt {padding-bottom:50px;}
+	.brand_bi .section_02 .bs_cont .bs_txt_wrap h3.h3_tit {padding-top:0; margin-top:40px;}
+	.brand_bi .section_02 .bs_cont .bs_img:after {content: ''; border-bottom:0;}
+
+	.bi_img_wrap figure.img_cont {width:48%;}
+	.bi_img_wrap figure.img_cont.left {margin:0 2% 0 0;}
+	.bi_img_wrap figure.img_cont.right {margin:0 0 0 2%;}
+	.bi_img_wrap figure.img_cont figcaption span.bi_tit {padding-top:10px;}
+
+	.brand_bi .bs_wrap .bs_txt_wrap h3.h3_tit.fz_01 {margin-top:0;}
+
+	.brand_bi .section_03 {padding:50px 15px 4px 15px; box-sizing: border-box;}
+	.brand_bi .section_03 .bs_txt_wrap h3.h3_tit:after {margin:40px 0 40px 0;}
+	.brand_bi .section_03 .bs_txt_wrap .bs_txt dl.value_list dd {padding:0 10px;}
+	.brand_bi .section_03 .bs_txt_wrap .bs_txt dl.value_list dd span.s_block {display:inline;}
+
+
+	.brand_bi .section_04 {height:auto; padding:60px 15px 40px 15px; box-sizing: border-box; background-color: #f6f5f5;}
+	.brand_bi .section_04 .bs_cont {height:auto; padding-top:0;}
+	.brand_bi .section_04 .bs_cont .bs_img {float:none; width:100%;}
+	.brand_bi .section_04 .bs_cont .bs_img table.color_tb tr td {border-bottom:10px solid #f6f5f5; border-left:10px solid #f6f5f5;  font-size:13px; padding:10px 0 0 7px;}
+	.brand_bi .section_04 .bs_cont .bs_img table.color_tb tr td.none {background-color: #f6f5f5;}
+
+	.brand_bi .section_04 .bs_cont .bs_txt_wrap {width:100%; margin-right:0; height:auto; padding:20px 0 10px 0;}
+
+	.sdgs_small_title {
+		font-size:28px;
+	}
+
+	.hansot_store .section_03 {margin-top:60px; padding:0 15px; box-sizing: border-box;}
+	.hansot_store .section_03 .hs_cont {padding:50px 0 40px 0;}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap {max-width:100%; padding-bottom:35px; margin:0;}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap:after {content: ''; bottom:0; width:100%;}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new {min-height:auto; height:auto; width:100%; margin:0 0 40px 0; padding:30px 20px 30px 20px; }
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new:before {content: ''; width:70px; height:70px; background-size:490px 70px; position:absolute; left:20px; top:25px; }
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_01:before {background-position: 0;}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_01 {background-size: 25%;}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_02:before {background-position: -70px 0;}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_02 {background-size: 25%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_03:before {background-position: -140px 0;}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_03 {background-size: 25%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_04:before {background-position: -210px 0;}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_04 {background-size: 25%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_05:before {background-position: -280px 0;}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_05 {background-size: 25%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_06:before {background-position: -350px 0;}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_06 {background-size: 25%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_07:before {background-position: -420px 0;}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_07 {background-size: 25%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_08:before {background-position: -490px 0;}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_08 {background-size: 25%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_09:before {background-position: -560px 0;}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_09 {background-size: 25%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_10:before {background-position: -630px 0;}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_10 {background-size: 25%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_10 {margin-bottom:0;}
+	
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new span.s_block {display:inline;}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new h4.h4_tit {padding-left:90px; font-size:18px; line-height:160%; min-height:56px;}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new h4.h4_tit span.s_block {display:block;}
+
+}
+
+@media all and (max-width:768px){
+	.brand_visual_wrap {height:380px;}
+	.brand_sdgs .brand_visual_wrap .visual_bg {background: url(../images/brand/brand_m_visual_01_sdgs.jpg) 50% 50% no-repeat; height: 380px; background-size: cover;}
+
+	.bs_wrap .bs_cont {max-width:100%; width:100%;}
+	.section_01 .bs_cont {display:block;}
+	.section_01 .bs_cont .bs_txt {width:100%}
+	
+	.bs_wrap.section_03 .bs_cont {padding:0;}
+	.brand_story .section_03 .bs_cont {padding:40px 0 40px 0;}
+	.section_03 .bs_cont .bs_txt_wrap {margin:0 auto 0 auto;}
+	.bs_wrap .bs_txt_wrap h3.h3_tit.fz_01 {margin-top:30px;}
+
+	/*브랜드 철학*/
+	.brand_philosophy .brand_visual_wrap {height:380px;}
+	.brand_philosophy .brand_visual_wrap .visual_bg {background: url(../images/brand/brand_m_ph_visual_01.jpg) 50% 50% no-repeat; background-size: cover; height: 380px;}
+	.brand_philosophy .bs_wrap .bs_txt_wrap h3.h3_tit.fz_01 {margin-top:0; padding-top:30px;}
+
+	/*브랜드 철학 > section_03*/
+	.brand_philosophy .bs_wrap.section_03 .bs_cont {padding-top:0;}
+
+	/*브랜드 유산*/
+	.brand_legacy .brand_visual_wrap .visual_bg {background: url(../images/brand/brand_m_lg_visual_01.jpg) 50% 50% no-repeat; height: 380px; background-size: cover;}
+
+	/*브랜드 BI*/
+	.brand_bi .brand_visual_wrap .visual_bg {background: url(../images/brand/brand_m_bi_visual_01.jpg) 50% 50% no-repeat; height: 380px; background-size: cover;}
+	.brand_bi .section_04 .bs_cont .bs_img table.color_tb tr td {border-bottom:10px solid #f6f5f5; border-left:10px solid #f6f5f5; height:60px; font-size:11px; padding:10px 0 0 7px;}
+
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_01 {background-size: 12%;}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_02 {background-size: 12%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_03 {background-size: 12%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_04 {background-size: 12%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_05 {background-size: 12%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_06 {background-size: 12%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_07 {background-size: 12%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_08 {background-size: 12%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_09 {background-size: 12%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_10 {background-size: 12%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_10 {margin-bottom:0;}
+
+}
+
+@media all and (max-width:640px){
+	.section_02 .bs_cont div.bs_img {min-width:320px; width:100%; height:auto; min-height:350px; margin:0 auto;}
+	.section_03 .bs_cont div.bs_img {min-width:320px; width:100%; height:auto; min-height:240px; margin:0 auto;}
+
+	/*브랜드 철학 > section_02*/
+	.brand_philosophy .section_02 .bs_cont div.bs_img {width:100%; height:auto; margin:0 auto;}
+	/*브랜드 철학 > section_03*/
+	.brand_philosophy .section_03 .bs_cont div.bs_img {width:100%; height:auto;}
+
+  .brand_esg .section_01 .bs_cont div.bs_img {min-width:320px; width:100%; height:auto; margin:0 auto;}
+  
+  /*ESG 경영 하위 SDGs*/
+  .brand_sdgs .section_01 .bs_cont div.bs_img {min-width:320px; width:100%; height:auto; margin:0 auto;}
+  
+  
+  .brand_esg .section_01 .bs_cont div.bs_img {min-width:320px; width:100%; height:auto; margin:0 auto;}
+  .brand_esg .section_01 .bs_cont div.bs_img {min-width:320px; width:100%; height:auto; margin:0 auto;}
+  .brand_visual_wrap .visual_bg {background: url(../images/brand/brand_m_visual_01.jpg) 50% 50% no-repeat; height: 380px; background-size: cover;}
+
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_01 {background-size: 20%; background-position: 5%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_02 {background-size: 20%; background-position: 5%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_03 {background-size: 20%; background-position: 5%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_04 {background-size: 20%; background-position: 5%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_05 {background-size: 20%; background-position: 5%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_06 {background-size: 20%; background-position: 5%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_07 {background-size: 20%; background-position: 5%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_08 {background-size: 20%; background-position: 5%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_09 {background-size: 20%; background-position: 5%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_10 {background-size: 20%; background-position: 5%}
+	.hansot_store .section_03 .hs_cont .hs_txt_wrap .hs_txt_new.hs_10 {margin-bottom:0;}
+}
+
+@media all and (max-width:414px){
+	.brand_philosophy .bs_wrap.section_02 .bs_txt_wrap {padding:40px 0 0 0; margin-top:0;}
+	
+}
+
+@media all and (max-width:390px){
+	.brand_philosophy .bs_wrap.section_02 .bs_txt_wrap {padding:17% 0 0 0; margin-top:-50px;}
+	
+}
+
+@media all and (max-width:375px){
+	.brand_philosophy .bs_wrap.section_02 .bs_txt_wrap {margin-top:-60px;}
+}
+
+@media all and (max-width:350px){
+	.brand_philosophy .bs_wrap.section_02 .bs_txt_wrap {padding:14% 0 0 0;}
+}
+
+
+
+
+
+
+
+
+
