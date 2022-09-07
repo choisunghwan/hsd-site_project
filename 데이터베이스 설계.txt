@@ -4,12 +4,33 @@ DTO(Data Transfer Object) : 계층 간 데이터 교환을 하기 위해 사용�
 VO(Value Object) : 값 오브젝트로써 값을 위해 쓰입니다. read-Only 특징(사용하는 도중에 변경 불가능하며 오직 읽기만 가능)을 가집니다.
  ----------------------------------------------------------------------
 테이블(한솥)
-create  table  hasot ( 0
-       name varchar2(20),
-       price number,
-       release_date  Date,
-       recipe varchar2(20),
-   ) ;
+//로그인폼 
+create  table  users ( 
+	user_id varchar(100),
+	user_email varchar(20),
+	user_name varchar(10),
+      	user_password varchar(10),
+	);
+
+
+
+아이디	이메일		이름	비밀번호
+--------------------------------------------------
+test 	test@gmail.com	홍길동	1234
+test1	test1@gmail.com	아무개	1234
+
+
+*******************************************************************************************************
+//자유게시판
+create  table  bbs (
+	index int, 
+     	price int,
+       	release_date  Date,
+      	recipe varchar(20)
+	);
+
+
+
 
 
 spring cycle

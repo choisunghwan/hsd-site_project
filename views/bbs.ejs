@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple memo</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>자유게시판</h1>
+
+    <input type="button" value="new Memo" onclick="javascript:location.href='/newMemo'">
+
+    <table border='1'>
+      <tr>
+        <th>메모</th>
+        <th>날짜</th>
+        <th>수정</th>
+      </tr>
+      <% rows.forEach((row, bbs)=>{ %>
+        <tr>
+          <td><%=row.CONTENT%></td>
+          <td><%=row.UPDATED_AT%></td>
+          <td>
+            <input type="button" onclick="javascript:location.href='/updateMemo?id=<%=row.ID%>'" value="Edit">
+            <input type="button" onclick="javascript:location.href='/deleteMemo?id=<%=row.ID%>'" value="Del">
+          </td>
+        </tr>
+      <% }) %>
+    </table>
+  </body>
+</html>

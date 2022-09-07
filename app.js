@@ -1,6 +1,7 @@
 const ejs = require('ejs');
 var createError = require('http-errors');
 var express = require('express');
+var mysql = require('mysql');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -12,13 +13,11 @@ var joinRouter = require('./routes/join');
 var loginRouter = require('./routes/login');
 var cshRouter = require('./routes/csh');
 var menusRouter = require('./routes/menus');
-// var usersRouter = require('./routes/users');
-// var coronachartRouter = require('./routes/coronachart');
-// var coronapickerRouter = require('./routes/coronapicker');
-// var imagesearchRouter = require('./routes/imagesearch');
-// var airRouter = require('./routes/air');
-// var videosearchRouter = require('./routes/videosearch');
-
+var locateRouter = require('./routes/locate');
+var bbsRouter = require('./routes/bbs');
+var newMemoRouter = require('./routes/newMemo');
+var updateMemoRouter = require('./routes/updateMemo');
+var usersRouter = require('./routes/users');
 var app = express();
 
 // view engine setup <ejs 템플릿엔진 사용>
@@ -31,7 +30,7 @@ app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 
 app.use(express.static("views"));
 app.use(logger('dev'));
-app.use(express.json());
+app.use(express.json()); //json 형태로 뿌려주기
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
@@ -44,13 +43,11 @@ app.use('/join', joinRouter);
 app.use('/login', loginRouter);
 app.use('/csh', cshRouter);
 app.use('/menus', menusRouter);
-// app.use('/users', usersRouter);
-// app.use('/coronachart', coronachartRouter);
-// app.use('/coronapicker', coronapickerRouter);
-// app.use('/ssimg', imagesearchRouter);
-// app.use('/air', airRouter);
-// app.use('/ssvideo', videosearchRouter);
-
+app.use('/locate', locateRouter);
+app.use('/bbs', bbsRouter);
+app.use('/newMemo',newMemoRouter);
+app.use('/updateMemo',updateMemoRouter);
+app.use('/users', usersRouter);
 
 
 // catch 404 and forward to error handler
