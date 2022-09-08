@@ -12,6 +12,7 @@ router.get('/', function(req, res, next) {
   });
 });
 
+
 //page move
 // router.get('/newMemo',  function(req, res, next){
 //   res.render('newMemo');

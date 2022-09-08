@@ -26,5 +26,6 @@ router.post('/store', [check('content').isByteLength({min:1, max:500})], functio
     }
   });
 
+
 module.exports = router;
 

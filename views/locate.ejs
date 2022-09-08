@@ -1,13 +1,312 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang="ko"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <!-- SNS LINK -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <!--// SNS LINK -->
+
+    <meta name="_csrf_parameter" content="_csrf"><meta name="_csrf_header" content="X-CSRF-TOKEN"><meta name="_csrf" content="92381c96-2de9-4f72-b837-de22e1165887"><title>브랜드 스토리</title>
+
+    <!--favicon-->
+    <link rel="icon" sizes="60x60" href="images/favicon.png">
+
+<link rel="stylesheet" type="text/css" href="stylesheets/ui.common.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/swiper.min.css">
+<!--[if gte IE 9 ]><link rel="stylesheet" href="/assets/css/ui.ie9.css" type="text/css" /><![endif]-->
+
+<style>
+    .file_input {
+        font-size:45px;
+        position:absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        margin:0;
+        padding:0;
+        border:0;
+        z-index:-1;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -ms-filter: "alpha(opacity=0)";
+        -khtml-opacity:0;
+        -moz-opacity:0;
+    }
+</style>
+
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-109125197-1&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://connect.facebook.net/signals/config/241666853119648?v=2.9.79&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" src="/assets/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/assets/js/ui.common.js"></script>
+<script type="text/javascript" src="/assets/js/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/TweenMax.min.js"></script>
+
+<script type="text/javascript" src="/assets/js/tss.js"></script>
+<script type="text/javascript" src="/assets/js/tss.util.js"></script>
+
+<!-- validatation check -->
+<script type="text/javascript" src="/assets/js/validation/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/assets/js/validation/messages_ko.min.js"></script>
+<script type="text/javascript" src="/assets/js/validate.js"></script>
+
+<!-- fileupload -->
+<script type="text/javascript" src="/assets/js/fileupload/jquery.iframe-transport.js"></script>
+<script type="text/javascript" src="/assets/js/fileupload/jquery.fileupload.js"></script>
+
+<script type="text/javascript" src="/assets/js/hansot.common.js"></script>
+
+<!-- naver map api
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=1MATn4mHBIsSKNHepOXg&submodules=geocoder"></script>
+-->
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=azbg6j3r3x"></script>
+
+<!-- moment js api -->
+<script type="text/javascript" src="/assets/js/moment.js"></script>
+<!-- lodash js api -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+
+<script>
+    $(function () {
+        var token = $("meta[name='_csrf']").attr('content');
+        var header = "X-CSRF-TOKEN";
+        $(document).ajaxSend(function(event, xhr, options) {
+            xhr.setRequestHeader(header, token);
+        });
+        $(document).ajaxError(function(event, xhr, options) {
+            if(xhr.status === 401) {
+                console.log(xhr);
+                if(tss.util.confirm('로그인이 필요합니다.')) {
+                    tss.util.auth();
+                }
+            }
+            if(xhr.status === 500 || xhr.status === 400) {
+                console.log("오류가 발생했습니다.");
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
+    </script>
+
     
-</head>
-<body>
-    <h1>지도 화면입니다.</h1>
-</body>
-</html>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/ui.brand.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+
+    <script type="text/javascript" src="javascripts/jquery.viewportchecker.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-111772169-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111772169-1');
+    </script>
+
+    <!-- Global site tag (gtag.js) - AdWords: 864658366 -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-864658366"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-864658366');
+    </script>
+
+    <!-- kakao pixcel -->
+    <script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/adfit/static/kp.js"></script>
+    <script type="text/javascript">
+        kakaoPixel('5575357302971415199').pageView();
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '241666853119648');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=241666853119648&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+<meta http-equiv="origin-trial" content="A7bG5hJ4XpMV5a3V1wwAR0PalkFSxLOZeL9D/YBYdupYUIgUgGhfVJ1zBFOqGybb7gRhswfJ+AmO7S2rNK2IOwkAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/864658366/?random=1662447271496&amp;cv=9&amp;fst=1662447271496&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;eid=376635471&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_his=24&amp;u_tz=540&amp;u_java=false&amp;u_nplug=5&amp;u_nmime=2&amp;gtm=2oa8v0&amp;sendb=1&amp;ig=1&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fwww.hsd.co.kr%2Fbrand%2Fstory&amp;ref=https%3A%2F%2Fwww.hsd.co.kr%2Fbrand%2Fstory&amp;tiba=%EB%B8%8C%EB%9E%9C%EB%93%9C%20%EC%8A%A4%ED%86%A0%EB%A6%AC&amp;auid=11267568.1662446448&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script></head>
+<body style="background-color:#EEECEC" ontouchstart="" class="vsc-initialized" cz-shortcut-listen="true">
+<!-- wrap s -->
+<div id="wrap" class="bg_w">
+    <!-- inc header s -->
+    <!-- header -->
+<header id="header">
+    <!-- header flex-->
+    <div class="hd_flex">
+        <div class="area_flex" style="display: block;">
+            <ul>
+                <li>
+                    <a href="/login">로그인</a>
+                    </li>
+                <li>
+                    <a href="/join">회원가입</a>
+                    </li>
+                <li class="sns_insta">
+                    <a href="https://www.instagram.com/hansot_official/" target="_blank" title="새 창 열림"><span class="blind">instagram</span></a>
+                </li>
+                <li class="sns_face">
+                    <a href="https://www.facebook.com/hansotOfficial/?ref=ts&amp;fref=ts" target="_blank" title="새 창 열림"><span class="blind">facebook</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- //header flex -->
+
+    <!-- header content -->
+    <div class="hd_fixed fix" style="display: block;">
+        <div class="hd_content">
+            <div class="logo">
+                <h1><a href="/"><span class="blind">한솥</span></a></h1>
+            </div>
+            <!-- gnb -->
+            <section id="gnb" class="area_gnb mo_version">
+                <!-- 모바일 로그인/회원가입 -->
+                <div class="m_area_flex">
+                    <ul>
+                        <li>
+                            <a href="/login">로그인</a>
+                            </li>
+                        <li>
+                            <a href="/join">회원가입</a>
+                            </li>
+                    </ul>
+                </div>
+                <!-- //모바일 로그인/회원가입 -->
+<!-- gnb -->
+<div class="gnb_menu">
+    <ul class="" style="height: 60px;">
+
+        <li class="dp1">
+            <p class="dp1_tit"><a href="/">한솥</a></p>
+        </li>
+
+        <li class="dp1">
+            <p class="dp1_tit"><a href="menus">메뉴</a></p>
+        </li>
+
+        <li class="dp1">
+            <p class="dp1_tit"><a href="locate">지도</a></p>
+        </li>
+        <li class="dp1">
+            <p class="dp1_tit"><a href="bbs">자유게시판</a></p>
+        </li>
+
+        <li class="dp1">
+            <p class="dp1_tit"><a href="csh">개발자 정보</a></p>
+        </li>
+
+        <li class="dp1">
+            <p class="dp1_tit"><a href="login">로그인</a></p>
+        </li>
+    </ul>
+</div>
+</section>
+<!--// gnb -->
+
+
+<div class="map_wrap">
+    <div class="title">
+        <h2 class="h2_tit h2_02">한솥 지도</h2>
+    </div>
+        <span class="title"><h3>지도중심기준 한솥 대구가톨릭대점 주소정보</h3></span>
+        <div id="map"style="width:500px;height:400px;position:relative;overflow:hidden;"></div>
+    <div class="hAddr">
+        <span id="centerAddr"></span>
+    </div>
+</div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c1c7c4e6fc6868ffb3b9ddac2114b9ae"></script>
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = {
+        center: new kakao.maps.LatLng(35.908219, 128.808721), // 지도의 중심좌표
+        level: 1 // 지도의 확대 레벨
+    };  
+
+// 지도를 생성합니다    
+var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+// 주소-좌표 변환 객체를 생성합니다
+var geocoder = new kakao.maps.services.Geocoder();
+
+var marker = new kakao.maps.Marker(), // 클릭한 위치를 표시할 마커입니다
+    infowindow = new kakao.maps.InfoWindow({zindex:1}); // 클릭한 위치에 대한 주소를 표시할 인포윈도우입니다
+
+// 현재 지도 중심좌표로 주소를 검색해서 지도 좌측 상단에 표시합니다
+searchAddrFromCoords(map.getCenter(), displayCenterInfo);
+
+// 지도를 클릭했을 때 클릭 위치 좌표에 대한 주소정보를 표시하도록 이벤트를 등록합니다
+kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
+    searchDetailAddrFromCoords(mouseEvent.latLng, function(result, status) {
+        if (status === kakao.maps.services.Status.OK) {
+            var detailAddr = !!result[0].road_address ? '<div>도로명주소 : ' + result[0].road_address.address_name + '</div>' : '';
+            detailAddr += '<div>지번 주소 : ' + result[0].address.address_name + '</div>';
+            
+            var content = '<div class="bAddr">' +
+                            '<span class="title">법정동 주소정보</span>' + 
+                            detailAddr + 
+                        '</div>';
+
+            // 마커를 클릭한 위치에 표시합니다 
+            marker.setPosition(mouseEvent.latLng);
+            marker.setMap(map);
+
+            // 인포윈도우에 클릭한 위치에 대한 법정동 상세 주소정보를 표시합니다
+            infowindow.setContent(content);
+            infowindow.open(map, marker);
+        }   
+    });
+});
+
+// 중심 좌표나 확대 수준이 변경됐을 때 지도 중심 좌표에 대한 주소 정보를 표시하도록 이벤트를 등록합니다
+kakao.maps.event.addListener(map, 'idle', function() {
+    searchAddrFromCoords(map.getCenter(), displayCenterInfo);
+});
+
+function searchAddrFromCoords(coords, callback) {
+    // 좌표로 행정동 주소 정보를 요청합니다
+    geocoder.coord2RegionCode(coords.getLng(), coords.getLat(), callback);         
+}
+
+function searchDetailAddrFromCoords(coords, callback) {
+    // 좌표로 법정동 상세 주소 정보를 요청합니다
+    geocoder.coord2Address(coords.getLng(), coords.getLat(), callback);
+}
+
+// 지도 좌측상단에 지도 중심좌표에 대한 주소정보를 표출하는 함수입니다
+function displayCenterInfo(result, status) {
+    if (status === kakao.maps.services.Status.OK) {
+        var infoDiv = document.getElementById('centerAddr');
+
+        for(var i = 0; i < result.length; i++) {
+            // 행정동의 region_type 값은 'H' 이므로
+            if (result[i].region_type === 'H') {
+                infoDiv.innerHTML = result[i].address_name;
+                break;
+            }
+        }
+    }    
+}
+</script>
