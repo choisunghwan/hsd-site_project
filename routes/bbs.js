@@ -62,11 +62,13 @@ router.get('/', function(req, res, next) {
 //   }
 // });
 
-// router.get('/deleteMemo', (req, res) =>{
-//   let id = req.query.id;
-//   db.deleteMemoById(id, () =>{
-//     res.redirect('/');
-//   });
-// });
+//page move : deleteMemo
+router.get('/deleteMemo', (req, res) =>{
+  let id = req.query.id;
+  db.deleteMemoById(id, () =>{
+    res.redirect('/bbs');
+  });
+});
+
 
 module.exports = router;

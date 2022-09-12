@@ -12,7 +12,8 @@
                 <h4 style="color: red;"><%=err.param%> : <%=err.msg%></h4>
             <% }) %>
         <% } %>
-        <form method="POST" action="/updateMemo" >
+        <!-- <form method="POST" action="/updateMemo" > 😀-->
+            <form method="POST" action="updateMemo/updateMemo" > 
             <input type="hidden" name="id" value="<%=row.ID%>">
             <textarea name="content"><%=row.CONTENT%></textarea>
             <input type="submit" value="submit">
