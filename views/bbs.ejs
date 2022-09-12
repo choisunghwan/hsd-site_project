@@ -11,7 +11,7 @@
   <meta property="og:description" content="">
   <!--// SNS LINK -->
 
-  <meta name="_csrf_parameter" content="_csrf"><meta name="_csrf_header" content="X-CSRF-TOKEN"><meta name="_csrf" content="92381c96-2de9-4f72-b837-de22e1165887"><title>브랜드 스토리</title>
+  <meta name="_csrf_parameter" content="_csrf"><meta name="_csrf_header" content="X-CSRF-TOKEN"><meta name="_csrf" content="92381c96-2de9-4f72-b837-de22e1165887"><title>자유게시판</title>
 
   <!--favicon-->
   <link rel="icon" sizes="60x60" href="images/favicon.png">
@@ -40,27 +40,27 @@
   }
 </style>
 
-<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-109125197-1&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://connect.facebook.net/signals/config/241666853119648?v=2.9.79&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" src="/assets/js/jquery-1.12.4.min.js"></script>
-<script type="text/javascript" src="/assets/js/jquery-ui-1.12.1.min.js"></script>
-<script type="text/javascript" src="/assets/js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="/assets/js/jquery.cookie.js"></script>
-<script type="text/javascript" src="/assets/js/ui.common.js"></script>
-<script type="text/javascript" src="/assets/js/swiper.jquery.min.js"></script>
-<script type="text/javascript" src="/assets/js/TweenMax.min.js"></script>
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-109125197-1&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://connect.facebook.net/signals/config/241666853119648?v=2.9.79&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" src="javascripts/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="javascripts/jquery.cookie.js"></script>
+<script type="text/javascript" src="javascripts/ui.common.js"></script>
+<script type="text/javascript" src="javascripts/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="javascripts/TweenMax.min.js"></script>
 
-<script type="text/javascript" src="/assets/js/tss.js"></script>
-<script type="text/javascript" src="/assets/js/tss.util.js"></script>
+<script type="text/javascript" src="javascripts/tss.js"></script>
+<script type="text/javascript" src="javascripts/tss.util.js"></script>
 
 <!-- validatation check -->
-<script type="text/javascript" src="/assets/js/validation/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/assets/js/validation/messages_ko.min.js"></script>
-<script type="text/javascript" src="/assets/js/validate.js"></script>
+<script type="text/javascript" src="javascripts/validation/jquery.validate.min.js"></script>
+<script type="text/javascript" src="javascripts/validation/messages_ko.min.js"></script>
+<script type="text/javascript" src="javascripts/validate.js"></script>
 
 <!-- fileupload -->
-<script type="text/javascript" src="/assets/js/fileupload/jquery.iframe-transport.js"></script>
-<script type="text/javascript" src="/assets/js/fileupload/jquery.fileupload.js"></script>
+<script type="text/javascript" src="javascripts/fileupload/jquery.iframe-transport.js"></script>
+<script type="text/javascript" src="javascripts/fileupload/jquery.fileupload.js"></script>
 
-<script type="text/javascript" src="/assets/js/hansot.common.js"></script>
+<script type="text/javascript" src="javascripts/hansot.common.js"></script>
 
 <!-- naver map api
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=1MATn4mHBIsSKNHepOXg&submodules=geocoder"></script>
@@ -68,7 +68,7 @@
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=azbg6j3r3x"></script>
 
 <!-- moment js api -->
-<script type="text/javascript" src="/assets/js/moment.js"></script>
+<script type="text/javascript" src="javascripts/moment.js"></script>
 <!-- lodash js api -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
 
@@ -151,13 +151,12 @@
             <!--// gnb -->
 
 <body>
-    <h1>자유게시판</h1>
+<!-- <h1  style="margin-top: 30px;">자유게시판</h1> -->
+<h2 class="h2_tit h2_02" style="margin-top: 40px;background-color: white;">자유게시판</h2>
 
-    <input type="button" value="new Memo" onclick="javascript:location.href='/newMemo'">
-
-    <table border='1'>
+    <table border='1' style="margin-top: 20px;">
         <tr>
-            <th>메모</th>
+            <th>글 내용 </th>
             <th>날짜</th>
             <th>수정</th>
         </tr>
@@ -172,5 +171,10 @@
         </tr>
         <% }) %>
     </table>
+
+    <div style="display: inline-block; margin: 3px; float: right;">
+
+        <input type="button" value="글쓰기" onclick="javascript:location.href='/newMemo'">
+    </div>
 </body>
 </html>
